@@ -1,8 +1,13 @@
-import React from "react";
-import Card from 'react-bootstrap/Card';
+import React from "react"; //import react 
+import Card from 'react-bootstrap/Card';  // card import
 
+// class for the BookItem component// extends and export word used to export app.js
 export class BookItem extends React.Component {
     render() {
+              // returning component
+
+        // returns the format of the book data back to the "books" class, which in turn sends it back to the "read" class
+
         return (
             <div>
                 {/* <h4>{this.props.book.title}</h4>
@@ -21,6 +26,6 @@ export class BookItem extends React.Component {
                     </Card.Body>
                 </Card>
             </div>
-        );
-    }
-}
+        ); //return
+    } //render
+} //class
