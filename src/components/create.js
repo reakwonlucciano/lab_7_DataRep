@@ -1,10 +1,15 @@
 import React from "react";
 import axios from "axios";
 
+// class for the create component// extends and export word used to export app.js
 export class Create extends React.Component {
 
+    //form
+    
     constructor(){
         super();
+        
+        //must bind 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.onChangeBookTitle = this.onChangeBookTitle.bind(this);
         this.onChangeBookCover = this.onChangeBookCover.bind(this);
@@ -41,6 +46,7 @@ export class Create extends React.Component {
         })
     }
 
+    // constuctor 
     onChangeBookTitle(e){
         this.setState({
             title:e.target.value
