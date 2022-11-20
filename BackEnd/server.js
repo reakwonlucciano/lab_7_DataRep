@@ -74,9 +74,9 @@ app.get('/api/books', (req, res) => {
 })
 
 // a method that reads a document/movie by id from your database in your node/express
-//server.(lab7)
+//server
 
-// get request for localhost:4000/api/movies
+// get request for localhost:4000/api/books
 app.get('/api/book/:id', (req, res)=>{
   
   // requests id and logs to console
